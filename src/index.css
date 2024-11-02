@@ -1,13 +1,386 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: Preahvihear;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #11071F !important;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mainContainer {
+  width: 65%;
+  margin: auto;
+}
+
+.navigation {
+  padding: 25px 0;
+  width: 65%;
+  margin: auto;
+}
+.navigation .nav-link {
+  color: #FFFFFF;
+  text-align: center;
+  transition: 0.5s ease;
+}
+.navigation .nav-link:hover {
+  color: #7127BA;
+}
+
+.main {
+  padding: 40px 0px;
+}
+.main .img img {
+  width: 300px;
+}
+.main .myName {
+  display: flex;
+}
+.main .myName .info {
+  position: relative;
+}
+.main .myName .info h5 {
+  color: #FFFFFF;
+  margin-bottom: 60px;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+.main .myName .info span {
+  color: #7127BA;
+}
+.main .myName .info h6 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: inline-block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4901960784);
+  letter-spacing: 0.34px;
+  font-size: 17px;
+}
+.main .myName .info h1 {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 126.664%; /* 63.332px */
+  letter-spacing: 1px;
+}
+.main .myName .info p {
+  font-size: 12px;
+  letter-spacing: 0.22px;
+}
+.main .myName .info img {
+  position: absolute;
+  top: 10px;
+  left: -85px;
+}
+.main .myName .info .forCircle {
+  position: relative;
+}
+.main .myName .info .forCircle img {
+  width: 160px;
+  height: 57.899px;
+  position: absolute;
+  top: 68px;
+  left: 115px;
+}
+.main .personalInfo {
+  margin-top: 40px;
+}
+.main .personalInfo h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.main .personalInfo h4 {
+  font-family: Preahvihear;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.44px;
+}
+
+.education {
+  background-image: url("./Images/Gradient.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 40%;
+  padding: 80px 0;
+}
+.education h2 {
+  color: rgba(255, 255, 255, 0.8078431373);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  margin-bottom: 50px;
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8078431373);
+}
+.education .cardInfo {
+  border-radius: 15px;
+  background: lightgray 0% 0%/154.2253136635px 154.2253136635px repeat, radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(105, 59, 147, 0.2) 0%, rgba(110, 191, 244, 0.04) 77.08%, rgba(70, 144, 212, 0) 100%);
+  box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
+  padding: 15px 35px;
+  display: flex;
+  height: 175.4px;
+  transition: 0.5s ease;
+}
+.education .cardInfo:hover {
+  transform: scale(1.05);
+}
+.education .cardInfo .card-img {
+  width: 40%;
+  padding: 10px 0;
+}
+.education .cardInfo .card-body {
+  padding: 10px 0;
+  width: 50%;
+}
+.education .cardInfo .card-body h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.education .cardInfo .card-body p {
+  font-size: 14px;
+}
+
+.skills {
+  padding: 50px 0;
+}
+.skills .info {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.skills .info h3 {
+  color: rgba(255, 255, 255, 0.7450980392);
+}
+.skills .info span {
+  color: #7127BA;
+}
+.skills .info p {
+  color: rgba(255, 255, 255, 0.862745098);
+}
+.skills .skillsContainer {
+  position: relative;
+  text-align: center;
+}
+.skills .html {
+  position: absolute;
+  top: -20px;
+  left: 34%;
+  width: 35px;
+}
+.skills .js {
+  position: absolute;
+  top: -15px;
+  left: 40%;
+}
+.skills .react {
+  position: absolute;
+  top: -15px;
+  left: 45%;
+}
+.skills .redux {
+  position: absolute;
+  top: -15px;
+  left: 51%;
+}
+.skills .next {
+  position: absolute;
+  top: -10px;
+  left: 57%;
+}
+.skills .figma {
+  position: absolute;
+  top: -15px;
+  left: 62%;
+}
+
+.porfolio {
+  padding: 60px 0;
+}
+.porfolio img {
+  width: 100%;
+}
+.porfolio h2 {
+  color: rgba(255, 255, 255, 0.8078431373);
+  font-size: 40px;
+  display: inline-block;
+  padding-bottom: 3px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8078431373);
+}
+.porfolio .cardd-info {
+  padding-top: 180px;
+}
+.porfolio .cardd-info h3 {
+  font-size: 17px;
+  color: #7127BA;
+  margin-bottom: 3px;
+}
+.porfolio .cardd-info a {
+  font-size: 20px;
+  display: block;
+  width: 500px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 15px;
+  transition: 0.5s ease;
+}
+.porfolio .cardd-info a:hover {
+  color: #ccd6f6;
+}
+.porfolio .cardd-info .desc {
+  color: #ccd6f6;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 26px 45px 31px 34px;
+  width: 600px;
+  z-index: 1;
+  border-radius: 14px;
+  background: radial-gradient(rgba(47, 172, 255, 0.14) 0%, rgba(114, 56, 169, 0.21) 100%, rgba(70, 143, 212, 0) 0%);
+  background-blend-mode: overlay, normal;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+.porfolio .cardd-img {
+  height: 600px;
+  background-position: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-size: cover;
+  background-image: url("./Images/Gradient.png");
+}
+.porfolio .cardd-img .project {
+  padding: 25px 0 0 35px;
+  background-color: #2b0b3a;
+  border-radius: 10px;
+}
+.porfolio .cardd-img .project .projectInner {
+  width: 450px;
+  height: 230px;
+  border-radius: 10px 0 10px 0;
+}
+.porfolio .cardd-img .projectTwo {
+  padding: 25px 35px 0 0;
+}
+
+.contact {
+  padding: 15px 0;
+}
+.contact h2 {
+  color: rgba(255, 255, 255, 0.8078431373);
+  font-size: 35px;
+  display: inline-block;
+  padding-bottom: 3px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8078431373);
+  margin-bottom: 20px;
+}
+.contact p {
+  color: rgba(255, 255, 255, 0.8078431373);
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.contact .links {
+  display: flex;
+  padding: 0;
+}
+.contact .links li {
+  margin-right: 30px;
+  padding: 5px 0;
+}
+.contact .links li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8078431373);
+  font-size: 18px;
+}
+.contact .links .linkedIn {
+  position: relative;
+}
+.contact .links .linkedIn::after {
+  content: "LinkedIn";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  color: rgba(255, 255, 255, 0.8078431373);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.contact .links .linkedIn:hover::after {
+  top: -15px;
+  left: -20px;
+  visibility: visible;
+  opacity: 1;
+}
+.contact .links .linkedIn .LinkedInIcon {
+  transition: 0.5s ease-in-out;
+}
+.contact .links .linkedIn:hover .LinkedInIcon {
+  fill: #0077B5;
+}
+.contact .links .Gmail {
+  position: relative;
+}
+.contact .links .Gmail::after {
+  content: "Gmail";
+  position: absolute;
+  top: 0;
+  left: -12px;
+  color: rgba(255, 255, 255, 0.8078431373);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.contact .links .Gmail:hover::after {
+  top: -15px;
+  visibility: visible;
+  opacity: 1;
+}
+.contact .links .Gmail .GmailIcon {
+  transition: 0.5s ease-in-out;
+}
+.contact .links .Gmail:hover .GmailIcon {
+  fill: #c71610;
+}
+.contact .links .CV {
+  background-color: #7127BA;
+  color: #FFFFFF;
+  padding: 5px 20px;
+  transition: 0.5s ease-in-out;
+}
+.contact .links .CV a {
+  font-size: 15px;
+}
+.contact .links .CV:hover {
+  background-color: #461676;
+}/*# sourceMappingURL=index.css.map */

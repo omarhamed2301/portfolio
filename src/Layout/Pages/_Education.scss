@@ -1,0 +1,59 @@
+@use "../Variables/Variables" as *;
+
+.education {
+  background-image: url("./Images/Gradient.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 40%;
+  padding: 80px 0;
+  h2 {
+    color: #ffffffce;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.2px;
+    margin-bottom: 50px;
+    display: inline-block;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ffffffce;
+  }
+  .cardInfo {
+    border-radius: 15px;
+    background: lightgray 0% 0% / 154.22531366348267px
+        154.22531366348267px repeat,
+      radial-gradient(
+        151.92% 127.02% at 15.32% 21.04%,
+        rgba(105, 59, 147, 0.2) 0%,
+        rgba(110, 191, 244, 0.04) 77.08%,
+        rgba(70, 144, 212, 0) 100%
+      );
+
+    
+    box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
+    margin-bottom: 20px;
+    padding: 15px 35px;
+    display: flex;
+    height: 175.4px;
+    transition: 0.5s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .card-img {
+      width: 40%;
+      padding: 10px 0;
+    }
+    .card-body {
+      padding: 10px 0;
+      width: 50%;
+      h4 {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

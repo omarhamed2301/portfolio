@@ -1,0 +1,15 @@
+@use '../Variables/Variables' as *;
+
+.navigation{
+    padding: 25px 0;
+    width: 65%;
+    margin: auto;
+    .nav-link{
+        color: $TextColor;
+        text-align: center;
+        transition: 0.5s ease;
+        &:hover{
+            color: $MainColor;
+        }
+    }
+}

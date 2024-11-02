@@ -1,0 +1,25 @@
+@use './Variables/Variables' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $TextColor;
+    font-family: Preahvihear;
+  }
+body{
+    
+    background-color: $BackgroundColor !important;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.mainContainer{
+    width: 65%;
+    margin: auto;
+}
+  

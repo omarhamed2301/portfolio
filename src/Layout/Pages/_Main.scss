@@ -1,0 +1,78 @@
+@use "../Variables/Variables" as *;
+
+.main {
+  padding: 40px 0px;
+  .img img {
+    width: 300px;
+  }
+  .myName {
+    display: flex;
+    .info {
+      position: relative;
+      h5 {
+        color: $TextColor;
+        margin-bottom: 60px;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -0.5px;
+      }
+      span {
+        color: $MainColor;
+      }
+      h6 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        display: inline-block;
+        border-bottom: 1px solid #ffffff7d;
+        letter-spacing: 0.34px;
+        font-size: 17px;
+      }
+      h1 {
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 126.664%; /* 63.332px */
+        letter-spacing: 1px;
+      }
+      p {
+        font-size: 12px;
+        letter-spacing: 0.22px;
+      }
+      img {
+        position: absolute;
+        top: 10px;
+        left: -85px;
+      }
+      .forCircle {
+        position: relative;
+        img {
+          width: 160px;
+          height: 57.899px;
+          position: absolute;
+          top: 68px;
+          left: 115px;
+        }
+      }
+    }
+  }
+  .personalInfo {
+    margin-top: 40px;
+    h2 {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1px;
+    }
+    h4 {
+      font-family: Preahvihear;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.44px;
+      
+    }
+  }
+}

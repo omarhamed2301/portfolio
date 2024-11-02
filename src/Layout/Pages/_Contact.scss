@@ -1,0 +1,99 @@
+@use "../Variables/Variables" as *;
+
+.contact {
+    padding: 15px 0;
+  h2 {
+    color: #ffffffce;
+    font-size: 35px;
+    display: inline-block;
+    padding-bottom: 3px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.2px;
+    border-bottom: 2px solid #ffffffce;
+    margin-bottom: 20px;
+}
+p{
+    color: #ffffffce;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.links{
+    display: flex;
+    padding: 0;
+    li{
+        margin-right: 30px;
+        padding: 5px 0;
+        a{
+            text-decoration: none;
+            color: #ffffffce;
+            font-size: 18px;
+        }
+    }
+    .linkedIn{
+        position: relative;
+        &::after{
+            content: "LinkedIn";
+            position: absolute;
+            top: 0;
+            left: -20px;
+            color: #ffffffce;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+        }
+        &:hover::after{
+            top: -15px;
+            left: -20px;
+            visibility: visible;
+            opacity: 1;
+        }
+        .LinkedInIcon{
+            transition: 0.5s ease-in-out;
+        }
+        &:hover .LinkedInIcon{
+            fill: #0077B5;
+        }
+    }
+    .Gmail{
+        position: relative;
+
+        &::after{
+            content: "Gmail";
+            position: absolute;
+            top: 0;
+            left: -12px;
+            color: #ffffffce;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+        }
+        &:hover::after{
+            top: -15px;
+            visibility: visible;
+            opacity: 1;
+        }
+        .GmailIcon{
+            transition: 0.5s ease-in-out;
+        }
+        &:hover .GmailIcon{
+            fill: #c71610;
+        }
+    }
+    
+    .CV{
+        background-color: $MainColor;
+        color: $TextColor;
+        padding: 5px 20px;
+        transition: 0.5s ease-in-out;
+        a{
+            font-size: 15px;
+        }
+        &:hover{
+            background-color: #461676;
+        }
+    }
+}
+}

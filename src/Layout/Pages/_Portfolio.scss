@@ -1,0 +1,87 @@
+@use "../Variables/Variables" as *;
+
+.porfolio {
+  padding: 60px 0;
+  img {
+    width: 100%;
+  }
+  h2 {
+    color: #ffffffce;
+    font-size: 40px;
+    display: inline-block;
+    padding-bottom: 3px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.2px;
+    border-bottom: 1px solid #ffffffce;
+  }
+  .cardd-info {
+    padding-top: 180px;
+    h3 {
+      font-size: 17px;
+      color: $MainColor;
+      margin-bottom: 3px;
+    }
+    a {
+      font-size: 20px;
+      display: block;
+      width: 500px;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 15px;
+      transition: 0.5s ease;
+      &:hover {
+        color: #ccd6f6;
+      }
+    }
+    .desc {
+      color: #ccd6f6;
+
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding: 26px 45px 31px 34px;
+      width: 600px;
+      z-index: 1;
+      border-radius: 14px;
+      background: radial-gradient(
+        rgba(47, 172, 255, 0.14) 0%,
+        rgba(114, 56, 169, 0.21) 100%,
+
+        rgba(70, 143, 212, 0) 0%
+      );
+
+      background-blend-mode: overlay, normal;
+      backdrop-filter: blur(40px);
+    }
+  }
+
+  .cardd-img {
+    height: 600px;
+    background-position: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-size: cover;
+
+    background-image: url("./Images/Gradient.png");
+    .project {
+      padding: 25px 0 0 35px;
+      background-color: #2b0b3a;
+      border-radius: 10px;
+      .projectInner {
+        width: 450px;
+        height: 230px;
+        border-radius: 10px 0 10px 0;
+      }
+    }
+    .projectTwo{
+      padding: 25px 35px 0 0;
+    }
+
+  }
+  
+}
