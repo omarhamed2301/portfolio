@@ -1,10 +1,5 @@
 import React from "react";
-import HTML from "../Images/HTML.png";
-import JS from "../Images/JavaScript.png";
-import REACT from "../Images/React.png";
-import REDUX from "../Images/Redux.png";
-import NEXT from "../Images/NEXT.png";
-import FIGMA from "../Images/Figma.png";
+
 import Structure from "../Images/LanguagesStructure.png";
 
 export default function Skills() {

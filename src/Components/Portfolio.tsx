@@ -2,6 +2,7 @@ import React from "react";
 import VA from "../Images/VA.png";
 import PizzaComp from '../Images/PizzaComp.png';
 import PortfolioCard from "./PortfolioCard";
+import { Link } from "react-router-dom";
 export default function Portfolio() {
   return (
     <div className="porfolio">
@@ -23,6 +24,9 @@ export default function Portfolio() {
             github="https://github.com/omarhamed2301/pizza-company"
             src={PizzaComp}
           />
+        </div>
+        <div className="moreProjectsBtn">
+          <Link to="/projects" style={{backgroundColor:'#7127BA',textDecoration:'none',color:'white', padding:'10px 20px', borderRadius:'10px', border:'none'}}>More Projects</Link>
         </div>
       </div>
     </div>

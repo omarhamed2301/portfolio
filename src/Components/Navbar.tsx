@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../Images/Logo.png";
 function Navbar() {
   return (
@@ -9,9 +10,9 @@ function Navbar() {
         <div className="col-lg-7 col-sm-8">
           <div className="row">
             <li className="nav-item col-lg-4 col-sm-4">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item col-lg-4 col-sm-4">
               <a className="nav-link" href="#">
@@ -19,9 +20,9 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item col-lg-4 col-sm-4">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/projects">
                 Projects
-              </a>
+              </Link>
             </li>
           </div>
         </div>

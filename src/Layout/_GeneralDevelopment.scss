@@ -12,6 +12,9 @@ body{
     background-color: $BackgroundColor !important;
     
 }
+.hidden{
+    opacity: 0;
+}
 
 li{
     list-style: none;
@@ -52,7 +55,7 @@ a{
             display: none;
         }
         .mainContainer, .navigation{
-            width: 80% !important;
+            width: 85% !important;
         }
         .row>*{
             width: auto !important;
@@ -115,5 +118,9 @@ a{
         }
         .porfolio .col-lg-7, .porfolio .cardd-img, .projectInner, .projectInner img{
             width: 100% !important;
+        }
+        .main .container{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
         }
   }

@@ -15,7 +15,6 @@ function Main() {
   useEffect(() => {
     const dynamicText = document.querySelector(".word") as HTMLElement;
     dynamicText.classList.add("stop-blinking");
-
     const typingInterval = setInterval(() => {
       const typeEffect = () => {
         const currentWord = words[wordIndex];
@@ -40,7 +39,7 @@ function Main() {
   return (
     <div className="main">
       <div className="mainContainer">
-        <div className="myName">
+        <div className="myName animate__animated animate__fadeInTopLeft">
           <div className="img">
             <img src={User} alt="user" />
           </div>
@@ -60,7 +59,7 @@ function Main() {
             <p>because if the cover does not impress you, what else can?</p>
           </div>
         </div>
-        <div className="personalInfo">
+        <div className="personalInfo animate__animated animate__fadeInBottomRight">
           <div className="container">
             <h2>
               I'm <span className="word"></span>
