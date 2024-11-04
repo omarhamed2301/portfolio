@@ -230,9 +230,6 @@ a {
   letter-spacing: 2.2px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.8078431373);
 }
-.porfolio .cardd-info {
-  padding-top: 180px;
-}
 .porfolio .cardd-info h3 {
   font-size: 17px;
   color: #7127BA;
@@ -258,7 +255,6 @@ a {
   font-weight: 500;
   line-height: normal;
   padding: 26px 45px 31px 34px;
-  width: 600px;
   z-index: 1;
   border-radius: 14px;
   background: radial-gradient(rgba(47, 172, 255, 0.14) 0%, rgba(114, 56, 169, 0.21) 100%, rgba(70, 143, 212, 0) 0%);
@@ -267,11 +263,11 @@ a {
           backdrop-filter: blur(40px);
 }
 .porfolio .cardd-img {
-  height: 600px;
+  height: 300px;
   background-position: 100%;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   background-size: cover;
   background-image: url("./Images/Gradient.png");
 }

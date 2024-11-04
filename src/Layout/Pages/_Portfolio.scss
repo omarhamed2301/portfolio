@@ -17,7 +17,6 @@
     border-bottom: 1px solid #ffffffce;
   }
   .cardd-info {
-    padding-top: 180px;
     h3 {
       font-size: 17px;
       color: $MainColor;
@@ -44,7 +43,7 @@
       font-weight: 500;
       line-height: normal;
       padding: 26px 45px 31px 34px;
-      width: 600px;
+      
       z-index: 1;
       border-radius: 14px;
       background: radial-gradient(
@@ -60,11 +59,11 @@
   }
 
   .cardd-img {
-    height: 600px;
+    height: 300px;
     background-position: 100%;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     background-size: cover;
 
     background-image: url("./Images/Gradient.png");
