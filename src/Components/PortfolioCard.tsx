@@ -1,11 +1,11 @@
 import React from "react";
 export default function PortfolioCard(props: any) {
   return (
-    <div className="row justify-content-between align-items-center mb-5">
+    <div className="row justify-content-between align-items-center mb-5" >
       <div className="col-lg-5">
         <div className="cardd-info">
           <h3 style={{fontWeight:'bold', letterSpacing:'1px'}}>Featured project</h3>
-          <a href={props.href} target="_blank" rel="noreferrer" style={{fontSize:'20px', color:'#a1a1a1'}}>
+          <a href={props.href} target="_blank" rel="noreferrer" style={{fontSize:'20px', color:'#a1a1a1', width:'100%'}}>
             {props.title}
           </a>
           <div className="desc">
@@ -19,16 +19,16 @@ export default function PortfolioCard(props: any) {
           </div>
         </div>
       </div>
-      <div className="col-lg-7">
-        <div className="cardd-img">
+      <div className="col-lg-7" style={{width:'100%'}}>
+        <div className="cardd-img" style={{width:'100%'}}>
           <a
             href={props.href}
             target="_blank"
             className="project"
             rel="noreferrer"
           >
-            <div className="projectInner">
-              <img src={props.src} alt="VA" />
+            <div className="projectInner" style={{width:'100%'}}>
+              <img src={props.src} alt="VA" style={{width:'100%'}}/>
             </div>
           </a>
         </div>

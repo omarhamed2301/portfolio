@@ -12,6 +12,7 @@ body{
     background-color: $BackgroundColor !important;
     
 }
+
 li{
     list-style: none;
 }
@@ -22,3 +23,85 @@ a{
     width: 65%;
     margin: auto;
 }
+
+@media (max-width: 600px) {
+    .main .img{
+        display: none;
+    }
+        .cardd-img{
+            margin-top: 10px;
+            padding: 0 !important;
+            height: auto !important;
+        }
+        .porfolio .cardd-img .project .projectInner{
+            height: auto !important;
+        }
+        .main .personalInfo h2{
+            font-size: 25px !important;
+        }
+        .main .personalInfo p{
+            font-size: 16px !important;
+        }
+        .main .personalInfo h4{
+            font-size: 16px !important;
+        }
+        .main .myName .info h5{
+            margin-bottom: 30px !important;
+        }
+        .main .myName .info img{
+            display: none;
+        }
+        .mainContainer, .navigation{
+            width: 80% !important;
+        }
+        .row>*{
+            width: auto !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        .education{
+            background-image: none !important;
+        }
+        .education, .porfolio{
+            padding: 30px 0 !important;
+        }
+        .contact{
+            padding: 0 !important;
+            padding-bottom: 15px !important;
+        }
+        .education .cardInfo{
+            padding: 5px 10px !important;
+            height: auto !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            background-color: #2b0b3a;
+        }
+        .education .cardInfo .card-img{
+            width: 25% !important;
+            margin-right: 25px;
+        }
+        .education .cardInfo .card-body{
+            width: 75% !important;
+        }
+        .education .cardInfo .card-img img{
+            width: 100% !important;
+            height: 100% !important;
+        }
+        .education .cardInfo .card-body p{
+            margin-bottom: 0 !important;
+        }
+        .porfolio .cardd-info .desc{
+            padding: 20px 15px !important;
+        }
+        .porfolio .container{
+            width: 85%;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        .nav-item{
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+            margin-left: 5px !important;
+            margin-right: 5px !important;
+        }
+  }

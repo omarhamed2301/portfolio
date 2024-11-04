@@ -18,13 +18,10 @@ export default function Skills() {
           <p>that values improving people's lives through accessible design.</p>
         </div>
         <div className="skillsContainer">
-          <img className="structure" src={Structure} alt="" />
-          <img className="html" src={HTML} alt="" />
-          <img className="js" src={JS} alt="" />
-          <img className="react" src={REACT} alt="" />
-          <img className="redux" src={REDUX} alt="" />
-          <img className="next" src={NEXT} alt="" />
-          <img className="figma" src={FIGMA} alt="" />
+          <img className="structure" src={Structure} alt="" style={{
+            width:'100%'
+          }} />
+          
         </div>
       </div>
     </div>
