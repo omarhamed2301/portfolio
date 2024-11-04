@@ -28,7 +28,7 @@ a {
     display: none;
   }
   .cardd-img {
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 0 !important;
     height: auto !important;
   }
@@ -36,7 +36,7 @@ a {
     height: auto !important;
   }
   .main .personalInfo h2 {
-    font-size: 25px !important;
+    font-size: 20px !important;
   }
   .main .personalInfo p {
     font-size: 16px !important;
@@ -102,6 +102,15 @@ a {
     padding-right: 10px !important;
     margin-left: 5px !important;
     margin-right: 5px !important;
+  }
+  .main .myName .info h1 {
+    font-size: 30px !important;
+  }
+  .porfolio .cardd-info a {
+    margin-bottom: 20px !important;
+  }
+  .porfolio .cardd-info .desc {
+    margin-bottom: 5px !important;
   }
 }
 .navigation {
