@@ -19,16 +19,16 @@ export default function PortfolioCard(props: any) {
           </div>
         </div>
       </div>
-      <div className="col-lg-7" style={{width:'100%'}}>
-        <div className="cardd-img" style={{width:'100%'}}>
+      <div className="col-lg-7" >
+        <div className="cardd-img" >
           <a
             href={props.href}
             target="_blank"
             className="project"
             rel="noreferrer"
           >
-            <div className="projectInner" style={{width:'100%'}}>
-              <img src={props.src} alt="VA" style={{width:'100%'}}/>
+            <div className="projectInner" >
+              <img src={props.src} alt="VA" />
             </div>
           </a>
         </div>
