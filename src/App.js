@@ -7,10 +7,12 @@ import Portfolio from "./Components/Portfolio";
 import Contact from "./Components/Contact";
 import { Route, Routes } from "react-router-dom"; // Import Routes instead of Switch
 import AllProjects from "./Components/AllProjects";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop/>
       <Routes>
         <Route
           path="/"

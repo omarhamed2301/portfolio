@@ -5,6 +5,7 @@ import PortfolioCard from "./PortfolioCard";
 import VA from "../Images/VA.png";
 import PizzaComp from "../Images/PizzaComp.png";
 import Ecommerce from "../Images/ecommerce.png";
+import Splitbill from "../Images/splitbill.png";
 
 export default function AllProjects() {
   return (
@@ -38,6 +39,14 @@ export default function AllProjects() {
               github="https://github.com/omarhamed2301/ecommerce"
               src={Ecommerce}
             />
+            <PortfolioCard
+              title="FairShare: Simplified Bill Splitting for Friends"
+              href="https://splitbill-tau.vercel.app/"
+              description="FairShare offers a streamlined way to manage shared expenses with friends. This responsive React app accurately tracks balances, identifies who owes whom, and checks if everything evens out. Built with a focus on responsive design and smooth state management."
+              github="https://github.com/omarhamed2301/splitbill"
+              src={Splitbill}
+            />
+            
           </div>
         </div>
       </div>
