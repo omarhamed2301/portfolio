@@ -95,7 +95,7 @@ a {
     margin-bottom: 0 !important;
   }
   .porfolio .cardd-info .desc {
-    padding: 20px 15px !important;
+    padding: 15px 10px !important;
   }
   .porfolio .container {
     width: 85%;
@@ -132,7 +132,7 @@ a {
 }
 .navigation .nav-link {
   color: #FFFFFF;
-  text-align: center;
+  text-align: end;
   transition: 0.5s ease;
 }
 .navigation .nav-link:hover {
@@ -141,6 +141,23 @@ a {
 
 .main {
   padding: 40px 0px;
+  position: relative;
+  overflow: hidden;
+}
+.main .background-dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  z-index: -1;
+  pointer-events: none; /* Ensure dots are non-interactive */
+}
+.main .background-dots .dot {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3); /* Light transparent dots */
+  border-radius: 50%;
+  animation: moveDot linear infinite;
 }
 .main .img img {
   width: 300px;
@@ -215,6 +232,23 @@ a {
   letter-spacing: 0.44px;
 }
 
+@keyframes moveDot {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-50px, 30px);
+  }
+  50% {
+    transform: translate(100px, -50px);
+  }
+  75% {
+    transform: translate(-30px, -30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 .education {
   background-image: url("./Images/Gradient.png");
   background-repeat: no-repeat;
@@ -351,6 +385,7 @@ a {
 }
 .porfolio .cardd-info .desc {
   color: #ccd6f6;
+  box-sizing: border-box;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;

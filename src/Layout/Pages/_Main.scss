@@ -2,6 +2,24 @@
 
 .main {
   padding: 40px 0px;
+  position: relative;
+  overflow: hidden;
+  .background-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+    pointer-events: none; /* Ensure dots are non-interactive */
+    .dot {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.3); /* Light transparent dots */
+      border-radius: 50%;
+      animation: moveDot linear infinite;
+    }
+  }
+
   .img img {
     width: 300px;
   }
@@ -72,7 +90,23 @@
       font-weight: 400;
       line-height: normal;
       letter-spacing: 0.44px;
-      
     }
+  }
+}
+@keyframes moveDot {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-50px, 30px);
+  }
+  50% {
+    transform: translate(100px, -50px);
+  }
+  75% {
+    transform: translate(-30px, -30px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }

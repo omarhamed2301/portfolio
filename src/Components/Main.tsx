@@ -35,9 +35,43 @@ function Main() {
 
     return () => clearInterval(typingInterval);
   }, [wordIndex, charIndex, words]);
+  const createDots = (numDots: number) => {
+    const container = document.querySelector(".background-dots")!;
+    container.innerHTML = ""; // Clear existing dots
+
+    for (let i = 0; i < numDots; i++) {
+      const dot = document.createElement("div");
+      dot.className = "dot";
+      dot.style.width = `${Math.random() * 30 + 20}px`; // Random size between 20px and 50px
+      dot.style.height = dot.style.width;
+      dot.style.top = `${Math.random() * 100}%`;
+      dot.style.left = `${Math.random() * 100}%`;
+      dot.style.animationDuration = `${Math.random() * 10 + 5}s`; // Random duration between 5s and 15s
+      container.appendChild(dot);
+    }
+  };
+
+  useEffect(() => {
+    const updateDots = () => {
+      const isMobile = window.matchMedia("(max-width: 768px)").matches; // Mobile breakpoint
+      const numDots = isMobile ? 5 : 15; // Adjust dots for mobile
+      createDots(numDots);
+    };
+
+    // Initial check and setup
+    updateDots();
+
+    // Add resize event listener
+    window.addEventListener("resize", updateDots);
+
+    return () => {
+      window.removeEventListener("resize", updateDots); // Cleanup listener
+    };
+  }, []);
 
   return (
     <div className="main">
+      <div className="background-dots"></div>
       <div className="mainContainer">
         <div className="myName animate__animated animate__fadeInTopLeft">
           <div className="img">
@@ -64,9 +98,16 @@ function Main() {
             <h2>
               I'm <span className="word"></span>
             </h2>
-            <p>Fresh Graduated from Faculty of Computers and Artificial Intelligence, Cairo University - 2024.</p>
+            <p>
+              Fresh Graduated from Faculty of Computers and Artificial
+              Intelligence, Cairo University - 2024.
+            </p>
 
-            <h4>A self-taught front-end React developer, passionate about <br/> crafting dynamic and responsive web applications that strike <br/> a perfect balance between user needs and business goals</h4>
+            <h4>
+              A self-taught front-end React developer, passionate about <br />{" "}
+              crafting dynamic and responsive web applications that strike{" "}
+              <br /> a perfect balance between user needs and business goals
+            </h4>
           </div>
         </div>
       </div>
