@@ -129,6 +129,7 @@ a {
   padding: 25px 0;
   width: 65%;
   margin: auto;
+  overflow-x: hidden;
 }
 .navigation .nav-link {
   color: #FFFFFF;
@@ -351,6 +352,7 @@ a {
 
 .porfolio {
   padding: 60px 0;
+  overflow-x: hidden;
 }
 .porfolio img {
   width: 100%;
