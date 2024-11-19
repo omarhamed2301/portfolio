@@ -50,7 +50,7 @@ export default function AllProjects() {
             <PortfolioCard
               title="FlexiBank (React & Redux)"
               href="https://bank-system-puce.vercel.app/"
-              description="FlexiBank Pro is a simplified banking system built with React and Redux for state management. This project offers essential banking functionalities, including account creation, balance management, loan requests, and repayments, all wrapped in a responsive and user-friendly interface. The design incorporates modern CSS techniques to enhance usability and aesthetics."
+              description="FlexiBank is a simplified banking system built with React and Redux for state management. This project offers essential banking functionalities, including account creation, balance management, loan requests, and repayments, all wrapped in a responsive and user-friendly interface. The design incorporates modern CSS techniques to enhance usability and aesthetics."
               github="https://github.com/omarhamed2301/bank-system"
               src={bankSystem}
             />
