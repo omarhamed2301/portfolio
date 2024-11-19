@@ -6,6 +6,7 @@ import VA from "../Images/VA.png";
 import PizzaComp from "../Images/PizzaComp.png";
 import Ecommerce from "../Images/ecommerce.png";
 import Splitbill from "../Images/splitbill.png";
+import bankSystem from "../Images/bankSystem.png";
 
 export default function AllProjects() {
   return (
@@ -45,6 +46,13 @@ export default function AllProjects() {
               description="FairShare offers a streamlined way to manage shared expenses with friends. This responsive React app accurately tracks balances, identifies who owes whom, and checks if everything evens out. Built with a focus on responsive design and smooth state management."
               github="https://github.com/omarhamed2301/splitbill"
               src={Splitbill}
+            />
+            <PortfolioCard
+              title="FlexiBank (React & Redux)"
+              href="https://bank-system-puce.vercel.app/"
+              description="FlexiBank Pro is a simplified banking system built with React and Redux for state management. This project offers essential banking functionalities, including account creation, balance management, loan requests, and repayments, all wrapped in a responsive and user-friendly interface. The design incorporates modern CSS techniques to enhance usability and aesthetics."
+              github="https://github.com/omarhamed2301/bank-system"
+              src={bankSystem}
             />
             
           </div>
