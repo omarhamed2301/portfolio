@@ -56,9 +56,9 @@ export default function AllProjects() {
               src={Ecommerce}
             />
             <PortfolioCard
-              title="CRUD React Application using Content API & State Management"
+              title="CRUD React Application (Context API & State Management)"
               href="https://cruds-sage.vercel.app/"
-              description="A dynamic React application showcasing CRUD functionality: Create, Read, Update, and Delete. Built with the Context API for efficient state management, the app delivers a seamless user experience with real-time updates and intuitive operations. Perfectly crafted to demonstrate practical skills in managing and manipulating data in a React environment."
+              description="CRUD functionality: Create, Read, Update, and Delete. Built with the Context API for efficient state management, the app delivers a seamless user experience and intuitive operations. Crafted to demonstrate practical skills in managing and manipulating data in a React environment."
               github="https://github.com/omarhamed2301/CRUDS"
               src={CRUDS}
             />
