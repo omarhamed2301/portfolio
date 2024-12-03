@@ -1,6 +1,6 @@
 import React from "react";
 
-import Structure from "../Images/LanguagesStructure.png";
+import Structure from "../Images/Skills.png";
 
 export default function Skills() {
   return (

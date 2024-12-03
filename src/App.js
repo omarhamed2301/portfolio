@@ -12,7 +12,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 function App() {
   return (
     <div className="App">
-      <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
         <Route
           path="/"
@@ -27,7 +27,7 @@ function App() {
             </>
           }
         />
-        <Route path="/projects" element={<AllProjects/>}/>
+        <Route path="/projects" element={<AllProjects />} />
       </Routes>
     </div>
   );
