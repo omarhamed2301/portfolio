@@ -5,7 +5,7 @@ import Education from "./Components/Education";
 import Skills from "./Components/Skills";
 import Portfolio from "./Components/Portfolio";
 import Contact from "./Components/Contact";
-import { Route, Routes } from "react-router-dom"; // Import Routes instead of Switch
+import { Route, Routes } from "react-router-dom";
 import AllProjects from "./Components/AllProjects";
 import ScrollToTop from "./Components/ScrollToTop";
 

@@ -132,7 +132,7 @@ a {
 }
 .navigation .nav-link {
   color: #FFFFFF;
-  text-align: end;
+  text-align: center;
   transition: 0.5s ease;
 }
 .navigation .nav-link:hover {
@@ -375,14 +375,26 @@ a {
 .porfolio .cardd-info a {
   font-size: 20px;
   display: block;
-  width: 500px;
-  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #007bff !important;
   text-decoration: none;
   margin-bottom: 15px;
-  transition: 0.5s ease;
+  transition: color 0.3s ease, -webkit-text-decoration 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
+  cursor: pointer;
 }
 .porfolio .cardd-info a:hover {
-  color: #ccd6f6;
+  color: #0056b3 !important;
+  text-decoration: underline;
+}
+.porfolio .cardd-info a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+.porfolio .cardd-info a:active {
+  color: #003f7f;
 }
 .porfolio .cardd-info .desc {
   color: #ccd6f6;
@@ -416,6 +428,52 @@ a {
 .porfolio .cardd-img .project .projectInner {
   width: 450px;
   height: 230px;
+}
+.porfolio .lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease;
+}
+.porfolio .lightbox-content {
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+}
+.porfolio .lightbox-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+.porfolio .lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.porfolio .lightbox-close:hover {
+  color: #ff4c4c;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .contact {
